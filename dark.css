@@ -21,7 +21,12 @@ body {
     position: fixed;
     margin: 22% 0 0 5px;
 }
-
+.sticky:hover {
+    color: #fd5e53;
+    letter-spacing: 1.5px;
+    text-decoration: underline;
+    transition: all 0.4s ease 0s;
+}
 /* -----------------------------------------------body end----------------------------------------------------- */
 /* -----------------------------------------------reaponsive----------------------------------------------------- */
 @media(max-width: 600px)
