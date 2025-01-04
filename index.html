@@ -1,212 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
-    <!-- <link rel="stylesheet" href="stylee.css"> -->
-    <link rel="icon" href="images/f1.png">
-    <link rel="stylesheet" href="light.css" media="(prefers-color-scheme: light)">
-    <link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)">
-    <div class="sticky">
-        <dark-mode-toggle id="dark-mode-toggle-1" style="position: sticky; float: inline-end;" appearance="toggle"
-            dark="Dark" light="Light">
-        </dark-mode-toggle>
-    </div>
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tushar Sharma - Portfolio</title>
+    <link rel="icon" href="images/f1.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="preloader"></div>
+
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="images/1.png" alt=""></a>
-        </div>
+      <div class="header-container">
+        <div class="logo"><img src="/images/fav.png" alt="" /></div>
         <nav class="navbar">
-            <ul>
-                <li><a href="#middle">Home</a></li>
-                <li><a href="#con1">About</a></li>
-                <li><a href="#proj">Project</a></li>
-                <li><a href="#con2">Contact us</a></li>
-            </ul>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
 
-    <div class="middle" id="middle">
-        <div class="container1">
-            <p>Hi, my name is</p>
-            <h1>Tushar Sharma</h1>
-            <h1 class="a1">I am a Computer Science Engineer</h1>
-            <p>I'm a Computer Science Engineer and a Web Developer</p>
-            <p class="cv1"><a class="cv" href="19ECTCS074_TusharSharma.pdf" download>Download CV</a></p>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <p class="subtitle">Hi, my name is</p>
+          <h1 class="title">Tushar Sharma</h1>
+          <h2 class="role">Computer Science Engineer</h2>
+          <p class="description">
+            I'm a passionate Computer Science Engineer and Web Developer focused
+            on building innovative solutions
+          </p>
+          <div class="cta-buttons">
+            <a href="Tushar-Sharma.pdf" class="btn primary" download
+              >Download CV</a
+            >
+            <a href="#contact" class="btn secondary">Get in Touch</a>
+          </div>
         </div>
-        <!-- <div class="container">
-            <p id="intro">Hello, my name is</p>
-            <p id="name">Tushar <span> Sharma</span></p>
-            <p id="work">Computer Science Enginner</p>
-            <a class="cv" href="19ECTCS074_TusharSharma.pdf" download>Download CV</a>
-        </div> -->
-    </div>
+      </section>
 
-
-    <div class="con1" id="con1">
-        <div class="con1head">
-            <div class="logo1">
-                <p>About Me</p>
+      <section id="about" class="about">
+        <div class="section-container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                Hi! I'm Tushar Sharma, a Computer Science Engineer from
+                University College of Engineering and Technology, Bikaner. As a
+                technology enthusiast, I'm passionate about creating innovative
+                solutions and staying at the forefront of technological
+                advancements.
+              </p>
             </div>
-            <div class="contactnav1">
-                <ul>
-                    <li><a href="#middle">Home</a></li>
-                    <li><a href="#con1">About</a></li>
-                    <li><a href="#proj">Project</a></li>
-                    <li><a href="#con2">Contact us</a></li>
-                </ul>
-            </div>
+          </div>
         </div>
-        <div class="aboutme">
-            <div class="edubox">
-                <p>Hi! My name is Tushar Sharma. I am a Computer Science Engineer Undergraduate form University
-                    College of
-                    Engineering and  Technology,Bikaner and a technology enthusiast.</p>
-            </div>
-            <div class="skillbox">
-                <h1>Skills</h1>
-                <div class="skill">
-                    <div class="skillname">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>C++</li>
-                        <li>Technical Analysis</li>
-                    </div>
-                    <div class="range">
-                        <li>⭐⭐⭐⭐</li>
-                        <li>⭐⭐⭐</li>
-                        <li>⭐⭐</li>
-                        <li>⭐⭐</li>
-                    </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="section-container">
+          <h2 class="section-title">Skills & Expertise</h2>
+          <div class="skills-categories">
+            <div class="skill-category">
+              <h3>Web Development</h3>
+              <div class="skill">
+                <div class="skillname">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
                 </div>
+                <div class="range">
+                  <li>⭐⭐⭐⭐</li>
+                  <li>⭐⭐⭐</li>
+                  <li>⭐⭐</li>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
 
-    <div class="project" id="proj">
-        <div class="con1head">
-            <div class="logo1">
-                <p>Projects</p>
+            <div class="skill-category">
+              <h3>Programming</h3>
+              <div class="skill">
+                <div class="skillname">
+                  <li>C++</li>
+                  <li>Python</li>
+                </div>
+                <div class="range">
+                  <li>⭐⭐⭐</li>
+                  <li>⭐⭐</li>
+                </div>
+              </div>
             </div>
-            <div class="contactnav1">
-                <ul>
-                    <li><a href="#middle">Home</a></li>
-                    <li><a href="#con1">About</a></li>
-                    <li><a href="#proj">Project</a></li>
-                    <li><a href="#con2">Contact us</a></li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="projectlist">
-
-            <div class="box">
-                <a href="https://tarun142002.github.io/Creation/">
-                    <img src="images/creation.jpg" alt="">
-                    <div class="ptojectcontainer">
-                        <h3>Creation</h3>
-                        <p>Project detais</p>
-                    </div>
-                </a>
+            <div class="skill-category">
+              <h3>AI & Machine Learning</h3>
+              <div class="skill">
+                <div class="skillname">
+                  <li>MS Excel</li>
+                  <li>Artificial Intelligence</li>
+                </div>
+                <div class="range">
+                  <li>⭐⭐⭐</li>
+                  <li>⭐⭐</li>
+                </div>
+              </div>
+              <p class="skill-description">
+                Experience in leveraging AI tools and technologies to build
+                intelligent solutions and solve real-world problems.
+              </p>
             </div>
-            <div class="box">
-                <a href="https://tarun142002.github.io/Creation/">
-                    <img src="images/creation.jpg" alt="">
-                    <div class="ptojectcontainer">
-                        <h3>Creation</h3>
-                        <p>Project detais</p>
-                    </div>
-                </a>
-            </div>
-            <div class="box">
-                <a href="https://tarun142002.github.io/Creation/">
-                    <img src="images/creation.jpg" alt="">
-                    <div class="ptojectcontainer">
-                        <h3>Creation</h3>
-                        <p>Project detais</p>
-                    </div>
-                </a>
-            </div>
+          </div>
         </div>
-    </div>
+      </section>
 
-    <div class="con2" id="con2">
-        <div class="con1head">
-            <div class="logo1">
-                <p>Contact Us</p>
-            </div>
-            <div class="contactnav1">
-                <ul>
-                    <li><a href="#middle">Home</a></li>
-                    <li><a href="#con1">About</a></li>
-                    <li><a href="#proj">Project</a></li>
-                    <li><a href="#con2">Contact us</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="contactitem">
-            <!-- <div class="mycontact">
-                <p id="mycont">My Contact</p>
-                <span>
-                    <h3>Phone</h3>
-                    <p>+91 89555 98492</p>
-                </span>
-                <span>
-                    <h3>Email</h3>
-                    <p>tarunsharma171977@gmail.com</p>
-                </span>
-                <span>
-                    <h3>Address</h3>
-                    <p>Kota, Rajasthan</p>
-                </span>
-            </div> -->
-            <div class="cont1">
-                <p>DISCUSS</p>
-                <form action="contact">
-                    <input type="name" placeholder="Your Name" required><br>
-                    <input type="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
-                    <input type="tel" placeholder="984 458 7854" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required><br>
-                    <textarea name="message" id="" cols="30" rows="7" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="send" type="submit">SEND MESSAGE</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    </div>
+      <section id="projects" class="projects">
+        <div class="section-container">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="/images/Stock_Price_prediction.png"
+                  alt="Stock Prediction"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Stocks Price Prediction</h3>
+                <p>
+                  Advanced stock price prediction system using LSTM models and
+                  real-time market data analysis.
+                </p>
+                <div class="project-tech">
+                  <span>Python</span>
+                  <span>LSTM</span>
+                  <span>Flask</span>
+                </div>
+              </div>
+            </article>
 
+            <article class="project-card">
+              <div class="project-image">
+                <img src="/images/IPO-Dashboard.png" alt="IPO Dashboard" />
+              </div>
+              <div class="project-content">
+                <h3>IPO Dashboard</h3>
+                <p>
+                  Real-time IPO monitoring system with comprehensive data
+                  visualization and alerts.
+                </p>
+                <div class="project-tech">
+                  <span>Python</span>
+                  <span>Flask</span>
+                  <span>BeautifulSoup</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=1000"
+                  alt="News App"
+                />
+              </div>
+              <div class="project-content">
+                <h3>NEWS App</h3>
+                <p>
+                  Dynamic news application with real-time updates and
+                  category-based filtering.
+                </p>
+                <div class="project-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="section-container">
+          <h2 class="section-title">Get in Touch</h2>
+          <div class="contact-content">
+            <form class="contact-form" onsubmit="sendEmail(event)">
+              <div class="form-group">
+                <input type="text" id="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Your Phone"
+                  pattern="[0-9]{10}"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
-        <div class="name">
-            <p> © Tushar Sharma 2022-23</p>
+      <div class="footer-container">
+        <p>© 2024 Tushar Sharma. All rights reserved.</p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/tarun171977/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/tarun142002"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <a href="https://x.com/Tushar171977" target="_blank" rel="noopener"
+            >Twitter</a
+          >
         </div>
-        <div class="social">
-            <a href="https://www.facebook.com/profile.php?id=100009596059976"><img class="svg"
-                    src="images/facebook-logo.png" alt=""></a>
-            <a href="https://www.instagram.com/t.a.r.u.n.01/"><img class="svg" src="images/instagram.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/tushar-sharma-a03151177/"><img class="svg" src="images/linkedin.png"
-                    alt=""></a>
-            <a href="https://twitter.com/Tushar171977"><img class="svg" src="images/twitter.png" alt=""></a>
-        </div>
+      </div>
     </footer>
 
     <script>
-        var loader = document.getElementById("preloader");
-        window.addEventListener("load", function () {
-            loader.style.display = "none";
-        })
+      // Preloader
+      window.addEventListener("load", () => {
+        document.getElementById("preloader").style.display = "none";
+      });
 
-        document.addEventListener('colorschemechange', (e) => {
-            document.documentElement.style.setProperty('color-scheme');
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
         });
-    </script>
-</body>
+      });
+      function sendEmail(event) {
+        event.preventDefault(); // Prevent form submission
 
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const message = document.getElementById("message").value;
+
+        const subject = `New Contact Form Submission from ${name}`;
+        const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`;
+
+        window.location.href = `mailto:tarunsharma171977@gmail.com?subject=${encodeURIComponent(
+          subject
+        )}&body=${encodeURIComponent(body)}`;
+      }
+    </script>
+  </body>
 </html>
